@@ -27,6 +27,12 @@ const login=async(req,res)=>{
             return res.status(400).send("email doesn't exists")
         }
 
+        // const match=user.checkPassword(req.body.password)
+
+        // if(!match){
+        //     return res.status(400).send("password doesn't matches")
+        // }
+
 
         return res.status(200).send({user})
     } catch (error) {
